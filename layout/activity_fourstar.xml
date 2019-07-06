@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".FourstarActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:id="@+id/forlayout">
+
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/hotelsname"
+           android:hint="Hotel Name"
+           />
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/hotelsadd"
+           android:hint="Hotel Address"
+           />
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/hotelscon"
+           android:hint="Hotel Contact"
+           />
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/addHotel"
+           android:text="Save"
+           android:onClick="addRestaurant"
+           />
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_marginBottom="7dp"
+           android:layout_marginTop="5dp"
+           android:hint="View Data"
+           android:id="@+id/show2"
+           android:gravity="center"
+           android:textSize="18sp"
+           android:onClick="Viewdata"/>
+   </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/forlayout"
+        android:id="@+id/recylerview">
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
+
+</layout>
